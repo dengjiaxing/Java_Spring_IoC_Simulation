@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<!-- <bean id="car" class="com.djx.carImplementation.BMWCar"> </bean> <bean 
+		id="human" class="com.djx.human.Human"> </bean> -->
+	<bean id="c" class="com.djx.carImplementation.BMWCar"></bean>
+	<bean id="human" class="com.djx.human.Human">
+	<!-- 将BMW实例c注入给human实例的car属性 -->
+		<property name="car" bean="c"></property>
+	</bean>
+</beans>
